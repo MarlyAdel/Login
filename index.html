@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="Css/bootstrap.min.css">
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+
+   
+
+  <div class="form-container">
+
+    <span class="d-none" id="userName"></span>
+    <div class="container my-5 text-center w-75">
+      <div class="login-form">
+        <div class="card-content m-auto p-5 w-75" id="loginForm">
+          <h1 class="mb-0">Smart Login System</h1>
+          <label for="signinEmail"></label>
+          <input id="signinEmail" type="email" placeholder="Enter your email" class="form-control my-2 w-100 mx-auto">
+          <label for="signinPassword"></label>
+          <input id="signinPassword" type="password" placeholder="Enter your password"
+            class="form-control my-1 w-100 mx-auto">
+    
+          <div class="pt-4">
+            <small id="incorrectMessage"></small>
+          </div>
+    
+          <button onclick="login()" class="btn btn-outline-info my-4 w-100">Login</button>
+          <p class="text-white">Don’t have an account?<a class="text-white" href="/signup" id="signup"> Sign Up</a></p>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    <!-- Sign-Up Form -->
+    
+    <span class="d-none" id="userName"></span>
+    
+    <div class="container my-5 text-center w-75">
+      <div class="singup-form">
+        <div class="  card-content m-auto p-5 w-75">
+          <h1 class="mb-0">Smart Login System</h1>
+          <label for="signupName"></label>
+          <input id="signupName" type="text" placeholder="Enter your name" class="form-control my-3 w-100 mx-auto">
+          <label for="signupEmail"></label>
+          <input id="signupEmail" type="email" placeholder="Enter your email" class="form-control my-3 w-100 mx-auto">
+          <label for="signupPassword"></label>
+          <input id="signupPassword" type="password" placeholder="Enter your password"
+            class="form-control my-1 w-100 mx-auto">
+    
+          <div class="pt-4">
+            <small id="validationMessage"></small>
+          </div>
+    
+          <button onclick="signup ()" class="btn btn-outline-info my-4 w-100">Sign Up</button>
+          <p class="text-white">You have an account?<a class="text-white" href="/" id="login"> Signin</a></p>
+    
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <script src="Js/main.js"></script>
+
+
+
+</body>
+
+</html>
